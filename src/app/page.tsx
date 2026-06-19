@@ -1,0 +1,351 @@
+import Link from "next/link";
+import { Phone, ArrowRight, Star, CheckCircle2, MapPin } from "lucide-react";
+
+const services = [
+  {
+    title: "Landscape Lighting",
+    description: "Permanent low-voltage LED systems that bring your property to life after dark.",
+    href: "/services/landscape-lighting",
+    image: "/images/service-landscape.jpg",
+  },
+  {
+    title: "Permanent Lighting",
+    description: "Year-round architectural lighting installed once — programmable for any season or occasion.",
+    href: "/services/permanent-lighting",
+    image: "/images/service-permanent.jpg",
+  },
+  {
+    title: "Holiday Lighting",
+    description: "Full-service holiday displays — we hang it, you enjoy it, we take it down.",
+    href: "/services/holiday-lighting",
+    image: "/images/service-holiday.jpg",
+  },
+  {
+    title: "Event Lighting",
+    description: "Transform any outdoor space into an unforgettable venue for weddings and events.",
+    href: "/services/event-lighting",
+    image: "/images/service-event.jpg",
+  },
+  {
+    title: "Commercial Lighting",
+    description: "Attract customers and enhance your brand with professional exterior lighting.",
+    href: "/services/commercial",
+    image: "/images/service-commercial.jpg",
+  },
+];
+
+const reasons = [
+  "Licensed & Insured",
+  "Family Owned & Operated",
+  "Free On-Site Estimates",
+  "Energy-Efficient LED Systems",
+  "Lifetime Warranty on Fixtures",
+  "Serving SE Louisiana Since 2015",
+];
+
+const serviceAreas = [
+  "Covington", "Mandeville", "Madisonville",
+  "Slidell", "New Orleans", "Metairie",
+  "Kenner", "Baton Rouge", "Hammond",
+  "Lacombe", "Mississippi Gulf Coast",
+];
+
+export default function HomePage() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        {/* Background photo — swap src for real photo */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
+        />
+        {/* Dark green overlay */}
+        <div className="absolute inset-0 bg-surface-dark/45" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-4 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-6">
+              Southeast Louisiana&apos;s #1 Outdoor Lighting Company
+            </div>
+
+            <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.0] mb-6">
+              Light Up Your{" "}
+              <span className="text-brand-green-bright">World</span>{" "}
+              With Professional Outdoor Lighting
+            </h1>
+
+            <p className="font-body text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
+              From stunning landscape lighting to dazzling holiday displays — <span className="font-bold italic text-brand-gold">Be The Light Decor</span> transforms homes and businesses across Southeast Louisiana.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/contact"
+                className="bg-brand-green-bright hover:bg-brand-green-bright/90 text-white font-heading font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-full transition-all shadow-lg hover:shadow-brand-green-bright/30 hover:shadow-xl"
+              >
+                Get a Free Quote
+              </Link>
+              <a
+                href="tel:5043896555"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-heading font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-full transition-all backdrop-blur-sm"
+              >
+                <Phone size={16} />
+                (504) 389-6555
+              </a>
+            </div>
+
+            {/* Quick stats */}
+            <div className="flex flex-wrap gap-8 mt-14 pt-10 border-t border-white/10">
+              {[
+                { value: "500+", label: "Projects Completed" },
+                { value: "10+", label: "Years Experience" },
+                { value: "100%", label: "Licensed & Insured" },
+              ].map((stat) => (
+                <div key={stat.label}>
+                  <div className="font-heading text-3xl font-bold text-white">{stat.value}</div>
+                  <div className="font-body text-sm text-white/60 mt-1">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
+              What We Do
+            </p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">
+              Our Lighting Services
+            </h2>
+            <p className="font-body text-gray-500 text-lg max-w-2xl mx-auto">
+              Professional outdoor lighting solutions for every need — residential, commercial, seasonal, and special events.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-6">
+            {services.map((svc) => (
+              <Link
+                key={svc.href}
+                href={svc.href}
+                className="group relative rounded-2xl overflow-hidden block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] aspect-[3/4] bg-surface-dark shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+              >
+                {/* Photo */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  style={{ backgroundImage: `url('${svc.image}')` }}
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                {/* Content */}
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-heading text-xl font-bold text-white mb-2">
+                    {svc.title}
+                  </h3>
+                  <p className="font-body text-white/75 text-sm leading-relaxed mb-4">
+                    {svc.description}
+                  </p>
+                  <div className="inline-flex items-center gap-1.5 text-brand-green-bright text-sm font-body font-semibold group-hover:gap-3 transition-all duration-200">
+                    Learn More <ArrowRight size={14} />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="py-20 bg-surface-section">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: photo */}
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-surface-dark shadow-xl">
+              <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: "url('/images/about-preview.jpg')" }}
+              />
+              <div className="absolute inset-0 bg-brand-green/10" />
+              <div className="absolute bottom-5 left-5 bg-white rounded-xl p-4 shadow-lg flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-brand-green flex items-center justify-center shrink-0">
+                  <Star size={18} className="text-white fill-white" />
+                </div>
+                <div>
+                  <div className="font-heading font-bold text-sm text-[#1a1a1a] leading-none">5-Star Rated</div>
+                  <div className="font-body text-xs text-gray-500 mt-0.5">Google & Facebook</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: content */}
+            <div>
+              <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
+                Why Choose Us
+              </p>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-5">
+                Local. Trusted. Family Owned.
+              </h2>
+              <p className="font-body text-gray-500 text-lg leading-relaxed mb-8">
+                We&apos;re not a national chain — we&apos;re your neighbors. Every project is handled personally by our team, and we stand behind every installation we make.
+              </p>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+                {reasons.map((reason) => (
+                  <li key={reason} className="flex items-center gap-3">
+                    <CheckCircle2 size={18} className="text-brand-green shrink-0" />
+                    <span className="font-body text-sm text-gray-700">{reason}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/about"
+                  className="bg-brand-green hover:bg-brand-green/90 text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors"
+                >
+                  Our Story
+                </Link>
+                <Link
+                  href="/gallery"
+                  className="border-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors"
+                >
+                  See Our Work
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery preview strip */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-2">
+                Portfolio
+              </p>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a]">
+                Recent Projects
+              </h2>
+            </div>
+            <Link
+              href="/gallery"
+              className="flex items-center gap-2 text-brand-green font-body font-semibold hover:underline shrink-0"
+            >
+              View Full Gallery <ArrowRight size={16} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            {[
+              "gallery-1.jpg", "gallery-2.jpg", "gallery-3.jpg", "gallery-4.jpg",
+              "gallery-5.jpg", "gallery-6.jpg", "gallery-7.jpg", "gallery-8.jpg",
+            ].map((img, i) => (
+              <div
+                key={img}
+                className={`bg-surface-light rounded-xl overflow-hidden aspect-square ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+              >
+                <div
+                  className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-300"
+                  style={{ backgroundImage: `url('/images/gallery/${img}')` }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 40%, #1a2e0e 70%, #0f1a0c 100%)" }}>
+        {/* Decorative gold glow blobs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full opacity-8 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-3">
+              Reviews
+            </p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
+              What Our Customers Say
+            </h2>
+            <div className="flex justify-center gap-1 mb-3">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={22} className="text-brand-gold fill-brand-gold" />
+              ))}
+            </div>
+            <p className="font-body text-white/50 text-sm">5.0 average · 100+ reviews on Google</p>
+          </div>
+
+          {/* Widget in a warm white card */}
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden p-2">
+            <div className="elfsight-app-693ca860-e97d-438b-a949-9ee394b9bd5a" data-elfsight-app-lazy></div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
+            Coverage
+          </p>
+          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-8">
+            We Serve Southeast Louisiana
+          </h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {serviceAreas.map((area) => (
+              <span
+                key={area}
+                className="bg-surface-light text-gray-600 font-body text-sm px-4 py-2 rounded-full border border-gray-200"
+              >
+                {area}
+              </span>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Link
+              href="/service-area"
+              className="text-brand-green font-body font-semibold hover:underline text-sm inline-flex items-center gap-1.5"
+            >
+              View Full Service Area <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-20 bg-brand-green">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
+            Ready To Light Up Your Property?
+          </h2>
+          <p className="font-body text-white/80 text-lg mb-10">
+            Contact us today for a free, no-obligation on-site estimate. We serve homeowners and businesses across Southeast Louisiana and the Mississippi Gulf Coast.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link
+              href="/contact"
+              className="bg-white hover:bg-gray-50 text-brand-green font-heading font-bold text-sm uppercase tracking-wider px-9 py-4 rounded-full transition-colors shadow-lg"
+            >
+              Get a Free Quote!
+            </Link>
+            <a
+              href="tel:5043896555"
+              className="flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-heading font-bold text-sm uppercase tracking-wider px-9 py-4 rounded-full transition-colors"
+            >
+              <Phone size={16} />
+              (504) 389-6555
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
