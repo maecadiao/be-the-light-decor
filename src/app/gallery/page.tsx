@@ -46,7 +46,7 @@ export default function GalleryPage() {
       </section>
 
       {/* Filter bar */}
-      <section className="bg-white border-b border-gray-100 sticky top-[calc(2.25rem+5rem)] z-40 shadow-sm">
+      <section className="sticky top-[calc(2.25rem+5rem)] z-40 shadow-sm" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 100%)", borderBottom: "1px solid rgba(238,186,11,0.25)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 py-3 overflow-x-auto scrollbar-none">
             {categories.map((cat) => (
@@ -66,34 +66,36 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery grid */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
+        <div className="absolute bottom-0 left-0 w-80 h-80 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
             {galleryItems.map((item, i) => (
               <div
                 key={i}
-                className={`bg-surface-light border border-gray-100 rounded-xl overflow-hidden relative group cursor-pointer ${
+                className={`rounded-xl overflow-hidden relative group cursor-pointer border border-white/10 ${
                   i % 7 === 0 ? "col-span-2 row-span-2" : ""
                 }`}
+                style={{ background: "rgba(255,255,255,0.06)" }}
               >
                 <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-brand-green/10 border border-brand-green/20 flex items-center justify-center">
-                    <span className="text-brand-green/40 text-lg">📸</span>
+                  <div className="w-10 h-10 rounded-full bg-brand-gold/15 border border-brand-gold/25 flex items-center justify-center">
+                    <span className="text-brand-gold/50 text-lg">📸</span>
                   </div>
-                  <span className="text-gray-400 text-xs text-center px-2">{item.label}</span>
+                  <span className="text-white/35 text-xs text-center px-2">{item.label}</span>
                 </div>
-                <div className="absolute inset-0 bg-brand-green/0 group-hover:bg-brand-green/5 transition-colors" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute inset-0 bg-brand-gold/0 group-hover:bg-brand-gold/5 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-white text-xs font-medium">{item.label}</span>
-                  <span className="ml-2 text-brand-green-bright text-xs">{item.category}</span>
+                  <span className="ml-2 text-brand-gold text-xs">{item.category}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          <p className="text-center text-gray-400 text-xs mt-8">
-            Add images to <code className="text-brand-green/60">/public/images/gallery/</code> and update this grid with{" "}
-            <code className="text-brand-green/60">next/image</code>
+          <p className="text-center text-white/25 text-xs mt-8">
+            Add images to <code className="text-brand-gold/50">/public/images/gallery/</code> and update this grid with{" "}
+            <code className="text-brand-gold/50">next/image</code>
           </p>
         </div>
       </section>

@@ -63,7 +63,7 @@ export default function EventLightingPage() {
       </section>
 
       {/* Event types */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1a1a] mb-3">
@@ -77,7 +77,8 @@ export default function EventLightingPage() {
             {eventTypes.map((e) => (
               <div
                 key={e.name}
-                className="bg-white border border-gray-100 border-t-4 border-t-brand-gold rounded-2xl p-7 text-center hover:shadow-lg transition-shadow"
+                className="border-t-4 border-t-brand-gold rounded-2xl p-7 text-center hover:shadow-lg transition-shadow"
+                style={{ background: "linear-gradient(135deg, #fff8e1 0%, #fef3c7 100%)", border: "1px solid rgba(238,186,11,0.3)", borderTop: "4px solid #eeba0b" }}
               >
                 <div className="text-4xl mb-4">{e.icon}</div>
                 <h3 className="font-heading text-lg font-semibold text-[#1a1a1a] mb-2">{e.name}</h3>

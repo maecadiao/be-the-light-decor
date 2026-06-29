@@ -57,7 +57,7 @@ export default function ContactPage() {
       </section>
 
       {/* Form + info */}
-      <section className="py-16 bg-white">
+      <section className="py-16" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact info */}

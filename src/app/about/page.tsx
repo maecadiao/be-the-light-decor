@@ -71,7 +71,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story section */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>

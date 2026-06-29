@@ -64,7 +64,7 @@ export default function CommercialPage() {
       </section>
 
       {/* Commercial types */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-[#1a1a1a] mb-3">
@@ -79,7 +79,8 @@ export default function CommercialPage() {
             {commercialTypes.map((t) => (
               <div
                 key={t.name}
-                className="bg-white border border-gray-100 border-t-4 border-t-brand-green-bright rounded-2xl p-7 text-center hover:shadow-lg transition-shadow"
+                className="border-t-4 border-t-brand-green-bright rounded-2xl p-7 text-center hover:shadow-lg transition-shadow"
+                style={{ background: "linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%)", border: "1px solid rgba(0,179,64,0.2)", borderTop: "4px solid #00b340" }}
               >
                 <div className="text-4xl mb-4">{t.icon}</div>
                 <h3 className="font-heading text-lg font-semibold text-[#1a1a1a] mb-2">{t.name}</h3>

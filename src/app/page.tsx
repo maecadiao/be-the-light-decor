@@ -114,7 +114,7 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
@@ -161,7 +161,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-surface-section">
+      <section className="py-20" style={{ background: "linear-gradient(135deg, #e8f5e2 0%, #d4edc8 50%, #e2f0dd 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: photo */}
@@ -223,20 +223,21 @@ export default function HomePage() {
       </section>
 
       {/* Gallery preview strip */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
+        <div className="absolute top-0 right-0 w-80 h-80 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-              <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-2">
+              <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-2">
                 Portfolio
               </p>
-              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a]">
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white">
                 Recent Projects
               </h2>
             </div>
             <Link
               href="/gallery"
-              className="flex items-center gap-2 text-brand-green font-body font-semibold hover:underline shrink-0"
+              className="flex items-center gap-2 text-brand-gold font-body font-semibold hover:text-white transition-colors shrink-0"
             >
               View Full Gallery <ArrowRight size={16} />
             </Link>
@@ -249,7 +250,8 @@ export default function HomePage() {
             ].map((img, i) => (
               <div
                 key={img}
-                className={`bg-surface-light rounded-xl overflow-hidden aspect-square ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+                className={`rounded-xl overflow-hidden aspect-square border border-white/10 ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+                style={{ background: "rgba(255,255,255,0.06)" }}
               >
                 <div
                   className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-300"
@@ -291,9 +293,9 @@ export default function HomePage() {
       </section>
 
       {/* Service Areas */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
+          <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
             Coverage
           </p>
           <h2 className="font-heading text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-8">
@@ -303,7 +305,8 @@ export default function HomePage() {
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-surface-light text-gray-600 font-body text-sm px-4 py-2 rounded-full border border-gray-200"
+                className="font-body font-semibold text-sm px-4 py-2 rounded-full"
+                style={{ background: "rgba(238,186,11,0.18)", border: "1px solid rgba(238,186,11,0.45)", color: "#92650a" }}
               >
                 {area}
               </span>
