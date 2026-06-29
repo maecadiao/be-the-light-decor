@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Star, ArrowRight } from "lucide-react";
 
-export default function ServicePageExtras() {
+export default function ServicePageExtras({ bgImage }: { bgImage: string }) {
   return (
     <>
       {/* Reviews */}
@@ -32,7 +32,7 @@ export default function ServicePageExtras() {
       {/* Service Areas — photo background with parallax, state groups + map */}
       <section
         className="relative py-20 bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/images/service-event.jpg')" }}
+        style={{ backgroundImage: `url('${bgImage}')` }}
       >
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/72" />

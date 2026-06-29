@@ -128,7 +128,7 @@ export default function HolidayLightingPage() {
         </div>
       </section>
 
-      <ServicePageExtras />
+      <ServicePageExtras bgImage="/images/service-holiday.jpg" />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">

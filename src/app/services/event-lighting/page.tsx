@@ -121,7 +121,7 @@ export default function EventLightingPage() {
         </div>
       </section>
 
-      <ServicePageExtras />
+      <ServicePageExtras bgImage="/images/service-event.jpg" />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">

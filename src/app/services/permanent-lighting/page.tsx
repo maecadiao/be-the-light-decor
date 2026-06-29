@@ -132,7 +132,7 @@ export default function PermanentLightingPage() {
         </div>
       </section>
 
-      <ServicePageExtras />
+      <ServicePageExtras bgImage="/images/service-permanent.jpg" />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">

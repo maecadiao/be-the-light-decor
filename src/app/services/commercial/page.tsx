@@ -120,7 +120,7 @@ export default function CommercialPage() {
         </div>
       </section>
 
-      <ServicePageExtras />
+      <ServicePageExtras bgImage="/images/service-commercial.jpg" />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">

@@ -120,7 +120,7 @@ export default function LandscapeLightingPage() {
         </div>
       </section>
 
-      <ServicePageExtras />
+      <ServicePageExtras bgImage="/images/service-landscape.jpg" />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">
