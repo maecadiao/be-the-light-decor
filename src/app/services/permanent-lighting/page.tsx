@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight, Phone } from "lucide-react";
+import ServicePageExtras from "@/components/sections/ServicePageExtras";
 
 export const metadata: Metadata = {
   title: "Permanent Lighting",
@@ -32,8 +33,7 @@ export default function PermanentLightingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }} />
+      <section className="relative pt-32 pb-20 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }}>
         <div className="absolute inset-0 bg-surface-dark/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -131,6 +131,8 @@ export default function PermanentLightingPage() {
           </div>
         </div>
       </section>
+
+      <ServicePageExtras />
 
       {/* CTA */}
       <section className="py-20 bg-brand-green">
