@@ -60,8 +60,8 @@ export default function ServiceAreaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-surface-dark via-[#0b1409] to-[#0a1f08]" />
+      <section className="relative pt-32 pb-20 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-brand-green text-xs font-semibold tracking-[0.3em] uppercase mb-4">
             Where We Work
