@@ -319,24 +319,34 @@ export default function HomePage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-brand-green">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-            Ready To Light Up Your Property?
+      <section className="relative py-32 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+        <div className="absolute inset-0 bg-black/72" />
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-8">
+            Free Estimates · No Obligation
+          </div>
+          <h2 className="font-heading text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            Ready To Light Up
+            <br />
+            <span className="italic text-brand-gold">Your Property?</span>
           </h2>
-          <p className="font-body text-white/80 text-lg mb-10">
+          <p className="font-body text-white/70 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
             Contact us today for a free, no-obligation on-site estimate. We serve homeowners and businesses across Southeast Louisiana and the Mississippi Gulf Coast.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
-              className="bg-white hover:bg-gray-50 text-brand-green font-heading font-bold text-sm uppercase tracking-wider px-9 py-4 rounded-full transition-colors shadow-lg"
+              className="bg-brand-gold hover:bg-brand-gold/90 text-[#1a1a1a] font-heading font-bold text-sm uppercase tracking-wider px-10 py-4 rounded-full transition-all shadow-xl"
+              style={{ boxShadow: "0 8px 32px rgba(238,186,11,0.45)" }}
             >
               Get a Free Quote!
             </Link>
             <a
               href="tel:5043896555"
-              className="flex items-center gap-2 border-2 border-white text-white hover:bg-white/10 font-heading font-bold text-sm uppercase tracking-wider px-9 py-4 rounded-full transition-colors"
+              className="flex items-center gap-2 border-2 border-white/50 hover:border-white text-white hover:bg-white/10 font-heading font-bold text-sm uppercase tracking-wider px-9 py-4 rounded-full transition-all"
             >
               <Phone size={16} />
               (504) 389-6555
