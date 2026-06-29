@@ -124,21 +124,31 @@ export default function LandscapeLightingPage() {
       <ServicePageExtras bgImage="/images/service-landscape.jpg" />
 
       {/* CTA */}
-      <section className="py-20 bg-brand-green">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
-            Ready to light up your property?
+      <section className="relative py-28 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/service-landscape.jpg')" }}>
+        <div className="absolute inset-0 bg-black/72" />
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+        <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-8">
+            Free Estimates · No Obligation
+          </div>
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-5 leading-tight">
+            Ready to Transform
+            <br />
+            <span className="italic text-brand-gold">Your Property?</span>
           </h2>
-          <p className="text-white/80 mb-8">
-            Get a free, no-pressure estimate. We&apos;ll come out, walk the property, and design
-            something you&apos;ll love.
+          <p className="text-white/70 mb-10 max-w-xl mx-auto">
+            Get a free, no-pressure estimate. We&apos;ll come out, walk the property, and design something you&apos;ll love.
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-brand-green font-heading font-bold text-sm uppercase tracking-wider px-10 py-4 rounded-full transition-all shadow-lg"
-          >
-            Get Your Free Estimate <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="inline-flex items-center justify-center gap-2 font-heading font-bold text-sm uppercase tracking-wider px-10 py-4 rounded-full transition-all" style={{ background: "#eeba0b", color: "#1a1a1a", boxShadow: "0 8px 32px rgba(238,186,11,0.45)" }}>
+              Get Your Free Estimate <ArrowRight size={16} />
+            </Link>
+            <a href="tel:5043896555" className="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white hover:bg-white/10 font-heading font-bold text-sm uppercase tracking-wider px-8 py-4 rounded-full transition-all">
+              <Phone size={16} />
+              (504) 389-6555
+            </a>
+          </div>
         </div>
       </section>
     </>
