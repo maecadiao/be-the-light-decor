@@ -131,19 +131,19 @@ export default function ServiceAreaPage() {
 
       {/* Service areas map section */}
       <section className="relative py-24 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
-        <div className="absolute inset-0 bg-white/50" />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-[#1a1a1a] uppercase mb-8 tracking-wide">
+          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-white uppercase mb-8 tracking-wide">
             Our Service Areas
           </h2>
 
-          <p className="font-bold text-[#1a1a1a] text-base uppercase tracking-widest mb-1">Louisiana:</p>
-          <p className="font-bold text-[#1a1a1a] text-base mb-6">
+          <p className="font-bold text-brand-gold text-sm uppercase tracking-widest mb-1">Louisiana:</p>
+          <p className="font-bold text-white text-base sm:text-lg mb-6">
             Baton Rouge, Covington, Hammond, Kenner, Mandeville, Metairie, New Orleans, Slidell, etc.
           </p>
 
-          <p className="font-bold text-[#1a1a1a] text-base uppercase tracking-widest mb-1">Mississippi:</p>
-          <p className="font-bold text-[#1a1a1a] text-base mb-10">
+          <p className="font-bold text-brand-gold text-sm uppercase tracking-widest mb-1">Mississippi:</p>
+          <p className="font-bold text-white text-base sm:text-lg mb-10">
             Biloxi, Gulfport, Picayune, Pearl River, Bay St. Louis, etc.
           </p>
 
