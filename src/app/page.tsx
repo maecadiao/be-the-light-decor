@@ -54,12 +54,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Background photo — swap src for real photo */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-        />
+      <section className="relative min-h-screen flex items-center bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
         {/* Dark green overlay */}
         <div className="absolute inset-0 bg-surface-dark/45" />
 
