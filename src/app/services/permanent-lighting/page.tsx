@@ -33,7 +33,7 @@ export default function PermanentLightingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }}>
+      <section className="relative pt-32 pb-20 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }}>
         <div className="absolute inset-0 bg-surface-dark/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -135,9 +135,9 @@ export default function PermanentLightingPage() {
       <ServicePageExtras bgImage="/images/service-permanent.jpg" />
 
       {/* CTA */}
-      <section className="relative py-28 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }}>
+      <section className="relative py-28 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-permanent.jpg')" }}>
         <div className="absolute inset-0 bg-black/72" />
-        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-48 h-48 md:w-[500px] md:h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-8">

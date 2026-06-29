@@ -31,7 +31,7 @@ export default function ServicePageExtras({ bgImage }: { bgImage: string }) {
 
       {/* Service Areas — photo background with parallax, state groups + map */}
       <section
-        className="relative py-20 bg-cover bg-center bg-fixed"
+        className="relative py-20 bg-cover bg-center bg-scroll md:bg-fixed"
         style={{ backgroundImage: `url('${bgImage}')` }}
       >
         {/* Dark overlay */}
