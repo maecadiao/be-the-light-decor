@@ -129,51 +129,36 @@ export default function ServiceAreaPage() {
         </div>
       </section>
 
-      {/* Map + additional areas */}
-      <section className="py-24 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
-        <div className="absolute top-0 right-0 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-        <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            {/* Map */}
-            <div className="rounded-2xl overflow-hidden shadow-2xl sticky top-28 border-2 border-brand-gold/30" style={{ height: "420px" }}>
-              <iframe
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-92.0%2C28.8%2C-88.0%2C31.8&layer=mapnik&marker=30.4735%2C-90.1013"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                title="Be The Light Decor Service Area — Southeast Louisiana"
-              />
-            </div>
+      {/* Service areas map section */}
+      <section className="relative py-24 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-white/50" />
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-[#1a1a1a] uppercase mb-8 tracking-wide">
+            Our Service Areas
+          </h2>
 
-            <div>
-              <p className="text-brand-gold font-body font-semibold text-xs uppercase tracking-widest mb-3">Extended Coverage</p>
-              <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-4">
-                We also serve
-              </h2>
-              <p className="text-white/60 leading-relaxed mb-8">
-                Our coverage extends across a wide region. Don&apos;t see your city? Give us a call —
-                we may still be able to help.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                {additionalAreas.map((city) => (
-                  <span
-                    key={city}
-                    className="inline-flex items-center gap-1.5 text-sm px-4 py-2 rounded-full font-body font-semibold"
-                    style={{ background: "rgba(238,186,11,0.18)", border: "1px solid rgba(238,186,11,0.35)", color: "#fde68a" }}
-                  >
-                    <MapPin size={11} className="text-brand-gold shrink-0" />
-                    {city}
-                  </span>
-                ))}
-              </div>
-              <p className="text-white/35 text-sm italic">
-                Not sure if we cover your area? Just ask — we often travel further than expected for
-                the right project.
-              </p>
-            </div>
+          <p className="font-bold text-[#1a1a1a] text-base uppercase tracking-widest mb-1">Louisiana:</p>
+          <p className="font-bold text-[#1a1a1a] text-base mb-6">
+            Baton Rouge, Covington, Hammond, Kenner, Mandeville, Metairie, New Orleans, Slidell, etc.
+          </p>
+
+          <p className="font-bold text-[#1a1a1a] text-base uppercase tracking-widest mb-1">Mississippi:</p>
+          <p className="font-bold text-[#1a1a1a] text-base mb-10">
+            Biloxi, Gulfport, Picayune, Pearl River, Bay St. Louis, etc.
+          </p>
+
+          {/* Google Maps embed */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl border-2 border-white/60" style={{ height: "420px" }}>
+            <iframe
+              src="https://maps.google.com/maps?q=Be+The+Light+Landscape+Lighting+389+Aspen+Ln+Covington+LA+70433&output=embed&z=10"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Be The Light Decor — Covington, LA"
+            />
           </div>
         </div>
       </section>
