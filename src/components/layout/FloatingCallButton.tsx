@@ -5,7 +5,7 @@ export default function FloatingCallButton() {
     <a
       href="tel:5043896555"
       aria-label="Call Be The Light Decor"
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 group"
+      className="fixed bottom-6 left-6 z-50 flex items-center gap-2.5 shadow-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 group"
       style={{
         background: "#eeba0b",
         boxShadow: "0 8px 32px rgba(238,186,11,0.50)",
