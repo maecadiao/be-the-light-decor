@@ -108,32 +108,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Video */}
-      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
-        <div className="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-        <div className="absolute bottom-0 left-0 w-40 h-40 md:w-80 md:h-80 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-6">
-            See Us in Action
-          </div>
-          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-            Watch Our Work <span className="italic text-brand-gold">Come Alive</span>
-          </h2>
-          <p className="text-white/60 mb-10 max-w-xl mx-auto">
-            Professional outdoor lighting that transforms properties after dark — this is what we do.
-          </p>
-          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-            <iframe
-              src="https://drive.google.com/file/d/1SC8atnXQEmw_Yq3orZxnKbHI4Q7owxPM/preview"
-              className="absolute inset-0 w-full h-full"
-              allow="autoplay"
-              allowFullScreen
-              title="Be The Light Decor — Professional Video"
-            />
-          </div>
-        </div>
-      </section>
-
       {/* Services */}
       <section className="py-20 relative overflow-hidden bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
         <div className="absolute inset-0 bg-black/75" />
@@ -180,6 +154,32 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Video */}
+      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
+        <div className="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+        <div className="absolute bottom-0 left-0 w-40 h-40 md:w-80 md:h-80 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-6">
+            See Us in Action
+          </div>
+          <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
+            Watch Our Work <span className="italic text-brand-gold">Come Alive</span>
+          </h2>
+          <p className="text-white/60 mb-10 max-w-xl mx-auto">
+            Professional outdoor lighting that transforms properties after dark — this is what we do.
+          </p>
+          <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+            <iframe
+              src="https://drive.google.com/file/d/1SC8atnXQEmw_Yq3orZxnKbHI4Q7owxPM/preview"
+              className="absolute inset-0 w-full h-full"
+              allow="autoplay"
+              allowFullScreen
+              title="Be The Light Decor — Professional Video"
+            />
           </div>
         </div>
       </section>
