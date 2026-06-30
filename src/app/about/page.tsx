@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-[#e8477a]/20 shadow-2xl">
               <div
                 className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: "url('https://drive.google.com/uc?export=view&id=1NFgYxQRfEmluA792Np1qwJpIofEcogJa')" }}
+                style={{ backgroundImage: "url('https://drive.google.com/thumbnail?id=1NFgYxQRfEmluA792Np1qwJpIofEcogJa&sz=w1200')" }}
               />
             </div>
           </div>
