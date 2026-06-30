@@ -51,6 +51,12 @@ export default function RootLayout({
         <Footer />
         <FloatingCallButton />
         <Script src="https://elfsightcdn.com/platform.js" strategy="lazyOnload" />
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="67fd69739b7e540175575d33"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
