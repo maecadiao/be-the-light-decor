@@ -168,9 +168,11 @@ export default function AboutPage() {
                 we live that out.
               </p>
             </div>
-            <div className="aspect-[4/3] bg-[#1a0612] border border-[#e8477a]/20 rounded-2xl flex flex-col items-center justify-center gap-3">
-              <span className="text-[#e8477a]/30 text-4xl">🎗️</span>
-              <span className="text-[#e8477a]/30 text-sm">Pink Lights for Hope photo</span>
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-[#e8477a]/20 shadow-2xl">
+              <div
+                className="w-full h-full bg-cover bg-center"
+                style={{ backgroundImage: "url('https://lh3.googleusercontent.com/d/1NFgYxQRfEmluA792Np1qwJpIofEcogJa')" }}
+              />
             </div>
           </div>
         </div>
