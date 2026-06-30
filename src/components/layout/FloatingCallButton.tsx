@@ -9,11 +9,12 @@ export default function FloatingCallButton() {
       style={{
         bottom: "88px",
         right: "20px",
-        background: "#22c55e",
-        boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+        background: "#eeba0b",
+        boxShadow: "0 4px 24px rgba(238,186,11,0.60)",
       }}
     >
-      <Phone size={22} className="text-white" strokeWidth={2.2} />
+      <span className="absolute inset-0 rounded-full animate-ping opacity-25" style={{ background: "#eeba0b" }} />
+      <Phone size={22} className="text-[#1a1a1a] relative z-10" strokeWidth={2.5} />
     </a>
   );
 }
