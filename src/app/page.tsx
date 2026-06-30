@@ -109,18 +109,18 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 50%, #0f1a0c 100%)" }}>
-        <div className="absolute top-0 right-0 w-72 h-72 md:w-[500px] md:h-[500px] rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
-        <div className="absolute bottom-0 left-0 w-48 h-48 md:w-80 md:h-80 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
+        <div className="absolute top-0 right-0 w-72 h-72 md:w-[500px] md:h-[500px] rounded-full opacity-30 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
+        <div className="absolute bottom-0 left-0 w-48 h-48 md:w-80 md:h-80 rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
               What We Do
             </p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">
               Our Lighting Services
             </h2>
-            <p className="font-body text-white/55 text-lg max-w-2xl mx-auto">
+            <p className="font-body text-gray-500 text-lg max-w-2xl mx-auto">
               Professional outdoor lighting solutions for every need — residential, commercial, seasonal, and special events.
             </p>
           </div>
@@ -158,7 +158,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20" style={{ background: "linear-gradient(135deg, #e8f5e2 0%, #d4edc8 50%, #e2f0dd 100%)" }}>
+      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: photo */}
@@ -181,13 +181,13 @@ export default function HomePage() {
 
             {/* Right: content */}
             <div>
-              <p className="text-brand-green font-body font-semibold text-sm uppercase tracking-widest mb-3">
+              <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
                 Why Choose Us
               </p>
               <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-5">
                 Local. Trusted. Family Owned.
               </h2>
-              <p className="font-body text-gray-500 text-lg leading-relaxed mb-8">
+              <p className="font-body text-gray-600 text-lg leading-relaxed mb-8">
                 We&apos;re not a national chain — we&apos;re your neighbors. Every project is handled personally by our team, and we stand behind every installation we make.
               </p>
 
@@ -261,17 +261,13 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 relative overflow-hidden" style={{ background: "linear-gradient(135deg, #0d1f0a 0%, #162b10 40%, #1a2e0e 70%, #0f1a0c 100%)" }}>
-        {/* Decorative gold glow blobs */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-10 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full opacity-8 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-3">
+            <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
               Reviews
             </p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">
               What Our Customers Say
             </h2>
             <div className="flex justify-center gap-1 mb-3">
@@ -279,11 +275,10 @@ export default function HomePage() {
                 <Star key={i} size={22} className="text-brand-gold fill-brand-gold" />
               ))}
             </div>
-            <p className="font-body text-white/50 text-sm">5.0 average · 100+ reviews on Google</p>
+            <p className="font-body text-gray-500 text-sm">5.0 average · 100+ reviews on Google</p>
           </div>
 
-          {/* Widget in a warm white card */}
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden p-2">
+          <div className="rounded-3xl shadow-xl overflow-hidden bg-white p-2">
             <div className="elfsight-app-693ca860-e97d-438b-a949-9ee394b9bd5a" data-elfsight-app-lazy></div>
           </div>
         </div>
