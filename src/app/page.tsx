@@ -243,17 +243,22 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              "gallery-1.jpg", "gallery-2.jpg", "gallery-3.jpg", "gallery-4.jpg",
-              "gallery-5.jpg", "gallery-6.jpg", "gallery-7.jpg", "gallery-8.jpg",
+              "/images/service-landscape.jpg",
+              "/images/service-holiday.jpg",
+              "/images/hero-bg.jpg",
+              "/images/service-permanent.jpg",
+              "/images/service-event.jpg",
+              "/images/service-commercial.jpg",
+              "/images/service-area-hero.jpg",
+              "/images/about-preview.jpg",
             ].map((img, i) => (
               <div
                 key={img}
                 className={`rounded-xl overflow-hidden aspect-square border border-white/10 ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
-                style={{ background: "rgba(255,255,255,0.06)" }}
               >
                 <div
                   className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: `url('/images/gallery/${img}')` }}
+                  style={{ backgroundImage: `url('${img}')` }}
                 />
               </div>
             ))}

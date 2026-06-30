@@ -11,18 +11,18 @@ export const metadata: Metadata = {
 const categories = ["All", "Landscape", "Holiday", "Events", "Commercial"];
 
 const galleryItems = [
-  { label: "Front Yard Landscape", category: "Landscape" },
-  { label: "Christmas Roofline", category: "Holiday" },
-  { label: "Wedding Reception", category: "Events" },
-  { label: "Oak Tree Uplighting", category: "Landscape" },
-  { label: "Mardi Gras Display", category: "Holiday" },
-  { label: "Commercial Storefront", category: "Commercial" },
-  { label: "Pathway Lighting", category: "Landscape" },
-  { label: "Backyard Party", category: "Events" },
-  { label: "Holiday Yard Display", category: "Holiday" },
-  { label: "Architectural Lighting", category: "Landscape" },
-  { label: "Corporate Event", category: "Commercial" },
-  { label: "Tree Wrap Lighting", category: "Landscape" },
+  { label: "Landscape Lighting", category: "Landscape", img: "/images/service-landscape.jpg" },
+  { label: "Christmas Lighting", category: "Holiday", img: "/images/service-holiday.jpg" },
+  { label: "Holiday Display", category: "Holiday", img: "/images/hero-bg.jpg" },
+  { label: "Permanent LED Lighting", category: "Landscape", img: "/images/service-permanent.jpg" },
+  { label: "Event Lighting", category: "Events", img: "/images/service-event.jpg" },
+  { label: "Commercial Lighting", category: "Commercial", img: "/images/service-commercial.jpg" },
+  { label: "Gulf Coast Installation", category: "Landscape", img: "/images/service-area-hero.jpg" },
+  { label: "Residential Lighting", category: "Landscape", img: "/images/about-preview.jpg" },
+  { label: "Pathway Lighting", category: "Landscape", img: "/images/service-landscape.jpg" },
+  { label: "Holiday Roofline", category: "Holiday", img: "/images/service-holiday.jpg" },
+  { label: "Corporate Event", category: "Commercial", img: "/images/service-commercial.jpg" },
+  { label: "Outdoor Uplighting", category: "Landscape", img: "/images/service-area-hero.jpg" },
 ];
 
 export default function GalleryPage() {
@@ -39,8 +39,8 @@ export default function GalleryPage() {
             The Gallery
           </h1>
           <p className="text-white/70 text-lg max-w-xl leading-relaxed">
-            Every photo here is a real property we&apos;ve transformed. Drop in your professional
-            photos to see this gallery come alive.
+            Every photo here is a real property we&apos;ve transformed. Browse our work across
+            landscape lighting, holiday displays, events, and commercial installations.
           </p>
         </div>
       </section>
@@ -76,16 +76,13 @@ export default function GalleryPage() {
                 className={`rounded-xl overflow-hidden relative group cursor-pointer border border-white/10 ${
                   i % 7 === 0 ? "col-span-2 row-span-2" : ""
                 }`}
-                style={{ background: "rgba(255,255,255,0.06)" }}
               >
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-brand-gold/15 border border-brand-gold/25 flex items-center justify-center">
-                    <span className="text-brand-gold/50 text-lg">📸</span>
-                  </div>
-                  <span className="text-white/35 text-xs text-center px-2">{item.label}</span>
-                </div>
-                <div className="absolute inset-0 bg-brand-gold/0 group-hover:bg-brand-gold/5 transition-colors" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                <div
+                  className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  style={{ backgroundImage: `url('${item.img}')` }}
+                />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="text-white text-xs font-medium">{item.label}</span>
                   <span className="ml-2 text-brand-gold text-xs">{item.category}</span>
                 </div>
@@ -93,10 +90,6 @@ export default function GalleryPage() {
             ))}
           </div>
 
-          <p className="text-center text-white/25 text-xs mt-8">
-            Add images to <code className="text-brand-gold/50">/public/images/gallery/</code> and update this grid with{" "}
-            <code className="text-brand-gold/50">next/image</code>
-          </p>
         </div>
       </section>
 
