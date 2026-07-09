@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, ArrowRight, Star, CheckCircle2, MapPin } from "lucide-react";
 
 const services = [
@@ -134,9 +135,12 @@ export default function HomePage() {
                 className="group relative rounded-2xl overflow-hidden block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] aspect-[3/4] bg-surface-dark shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Photo */}
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                  style={{ backgroundImage: `url('${svc.image}')` }}
+                <Image
+                  src={svc.image}
+                  alt={`${svc.title} by Be The Light Decor`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
@@ -191,9 +195,12 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: photo */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-surface-dark shadow-xl">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/about-preview.jpg')" }}
+              <Image
+                src="/images/about-preview.jpg"
+                alt="Be The Light Decor team providing outdoor lighting services in Southeast Louisiana"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
               <div className="absolute inset-0 bg-brand-green/10" />
               <div className="absolute bottom-5 left-5 bg-white rounded-xl p-4 shadow-lg flex items-center gap-3">
@@ -270,22 +277,25 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              "/images/service-landscape.jpg",
-              "/images/service-holiday.jpg",
-              "/images/hero-bg.jpg",
-              "/images/service-permanent.jpg",
-              "/images/service-event.jpg",
-              "/images/service-commercial.jpg",
-              "/images/service-area-hero.jpg",
-              "/images/about-preview.jpg",
+              { src: "/images/service-landscape.jpg", alt: "Landscape lighting project by Be The Light Decor" },
+              { src: "/images/service-holiday.jpg", alt: "Holiday lighting installation by Be The Light Decor" },
+              { src: "/images/hero-bg.jpg", alt: "Professional outdoor lighting by Be The Light Decor" },
+              { src: "/images/service-permanent.jpg", alt: "Permanent LED lighting project by Be The Light Decor" },
+              { src: "/images/service-event.jpg", alt: "Event lighting by Be The Light Decor" },
+              { src: "/images/service-commercial.jpg", alt: "Commercial lighting project by Be The Light Decor" },
+              { src: "/images/service-area-hero.jpg", alt: "Outdoor lighting installation in Southeast Louisiana" },
+              { src: "/images/about-preview.jpg", alt: "Be The Light Decor residential lighting project" },
             ].map((img, i) => (
               <div
-                key={img}
-                className={`rounded-xl overflow-hidden aspect-square border border-white/10 ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+                key={img.src}
+                className={`rounded-xl overflow-hidden relative aspect-square border border-white/10 ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
               >
-                <div
-                  className="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-300"
-                  style={{ backgroundImage: `url('${img}')` }}
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  className="object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}
@@ -308,7 +318,7 @@ export default function HomePage() {
                 <Star key={i} size={22} className="text-brand-gold fill-brand-gold" />
               ))}
             </div>
-            <p className="font-body text-gray-500 text-sm">5.0 average · 100+ reviews on Google</p>
+            <p className="font-body text-gray-500 text-sm">4.8 average · 100+ reviews on Google</p>
           </div>
 
           <div className="rounded-3xl shadow-xl overflow-hidden bg-white p-2">

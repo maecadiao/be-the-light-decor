@@ -45,8 +45,14 @@ export default function Footer() {
         <div className="absolute bottom-0 right-0 w-40 h-40 md:w-80 md:h-80 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
 
         <div className="relative z-10 max-w-6xl mx-auto">
-          {/* Badge */}
-          <div className="flex justify-center mb-8">
+          {/* Logo + Badge */}
+          <div className="flex flex-col items-center mb-8 gap-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo-gold.png"
+              alt="Be The Light Decor"
+              className="h-16 w-auto"
+            />
             <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest">
               Stay in the Loop
             </div>

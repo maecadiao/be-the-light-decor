@@ -64,13 +64,14 @@ export default function Header() {
 
           {/* Logo */}
           <Link href="/" className="shrink-0 ml-2 lg:ml-10">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/logo.png"
-              alt="Be The Light Decor"
-              className="h-36 lg:h-40 w-auto block transition-all duration-300"
-              style={scrolled ? {} : { filter: "brightness(0) invert(1)" }}
-            />
+            <div className={`transition-all duration-300 rounded-lg ${scrolled ? "bg-[#0d0d0d] px-2 py-0" : ""}`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/logo-gold.png"
+                alt="Be The Light Decor"
+                className="h-14 lg:h-16 w-auto block transition-all duration-300"
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav — centered */}

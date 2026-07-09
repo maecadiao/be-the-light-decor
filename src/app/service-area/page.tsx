@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, ArrowRight, Phone } from "lucide-react";
+import { locations } from "@/lib/locations";
 
 export const metadata: Metadata = {
   title: "Service Area",
@@ -110,21 +111,35 @@ export default function ServiceAreaPage() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {primaryAreas.map((area) => (
-              <div
-                key={area.city}
-                className="rounded-2xl p-7 hover:shadow-xl transition-shadow border"
-                style={{ background: area.bg, borderColor: area.border + "66" }}
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <MapPin size={16} className={area.icon} />
-                  <h3 className="font-heading text-lg font-bold text-[#1a1a1a]">
-                    {area.city}, {area.state}
-                  </h3>
+            {primaryAreas.map((area) => {
+              const loc = locations.find((l) => l.name === area.city);
+              const card = (
+                <div
+                  className="rounded-2xl p-7 hover:shadow-xl transition-all border"
+                  style={{ background: area.bg, borderColor: area.border + "66" }}
+                >
+                  <div className="flex items-center gap-2 mb-3">
+                    <MapPin size={16} className={area.icon} />
+                    <h3 className="font-heading text-lg font-bold text-[#1a1a1a]">
+                      {area.city}, {area.state}
+                    </h3>
+                  </div>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-4">{area.desc}</p>
+                  {loc && (
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold text-amber-700 hover:text-amber-900 transition-colors">
+                      View {area.city} Page <ArrowRight size={12} />
+                    </span>
+                  )}
                 </div>
-                <p className="text-gray-700 text-sm leading-relaxed">{area.desc}</p>
-              </div>
-            ))}
+              );
+              return loc ? (
+                <Link key={area.city} href={`/service-area/${loc.slug}`}>
+                  {card}
+                </Link>
+              ) : (
+                <div key={area.city}>{card}</div>
+              );
+            })}
           </div>
         </div>
       </section>

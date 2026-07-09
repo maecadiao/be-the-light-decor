@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Phone, Heart, MapPin, MessageCircle, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -94,8 +95,14 @@ export default function AboutPage() {
                 so you never have to climb a ladder or untangle a single light string again.
               </p>
             </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
-              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/images/about-preview.jpg')" }} />
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl relative">
+              <Image
+                src="/images/about-preview.jpg"
+                alt="Be The Light Decor — family-owned outdoor lighting company based in Covington, Louisiana"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -168,10 +175,13 @@ export default function AboutPage() {
                 we live that out.
               </p>
             </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-[#e8477a]/20 shadow-2xl">
-              <div
-                className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: "url('/images/pink-lights-hope.jpg.png')" }}
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border border-[#e8477a]/20 shadow-2xl relative">
+              <Image
+                src="/images/pink-lights-hope.jpg.png"
+                alt="Pink Lights for Hope — Be The Light Decor breast cancer awareness initiative honoring Stacey Buras Culotta"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
           </div>
