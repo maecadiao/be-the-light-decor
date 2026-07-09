@@ -51,7 +51,7 @@ export default function Footer() {
             <img
               src="/images/logo-gold.png"
               alt="Be The Light Decor"
-              className="h-16 w-auto"
+              className="h-28 w-auto"
             />
             <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest">
               Stay in the Loop
