@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, Phone, MapPin, ChevronDown } from "lucide-react";
@@ -77,10 +78,14 @@ export default async function CityPage({
       />
 
       {/* Hero */}
-      <section
-        className="relative pt-32 pb-24 bg-cover bg-center bg-scroll md:bg-fixed"
-        style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}
-      >
+      <section className="relative pt-32 pb-24 overflow-hidden">
+        <Image
+          src="/images/service-area-hero.jpg"
+          alt={`Outdoor lighting installation in ${location.name}, ${location.stateAbbr} — Be The Light Decor`}
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-brand-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">
@@ -230,10 +235,8 @@ export default async function CityPage({
       </section>
 
       {/* CTA */}
-      <section
-        className="relative py-28 bg-cover bg-center bg-scroll md:bg-fixed"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-      >
+      <section className="relative py-28 overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/72" />
         <div
           className="absolute top-1/2 left-1/4 -translate-y-1/2 w-48 h-48 md:w-[500px] md:h-[500px] rounded-full opacity-20 pointer-events-none"

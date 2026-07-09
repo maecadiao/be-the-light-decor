@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, ArrowRight, Star, CheckCircle2, MapPin } from "lucide-react";
+import { Phone, ArrowRight, Star, CheckCircle2 } from "lucide-react";
 
 const services = [
   {
@@ -55,27 +55,28 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
-        {/* Dark green overlay */}
+      <section className="relative min-h-screen flex items-center overflow-hidden">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="Professional outdoor lighting installation illuminating a Southeast Louisiana home at night"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-surface-dark/45" />
-
-        {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-4 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-6">
               Southeast Louisiana&apos;s #1 Outdoor Lighting Company
             </div>
-
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.0] mb-6">
               Light Up Your{" "}
               <span className="text-brand-green-bright">World</span>{" "}
               With Professional Outdoor Lighting
             </h1>
-
             <p className="font-body text-lg sm:text-xl text-white/80 leading-relaxed mb-10 max-w-2xl">
               From stunning landscape lighting to dazzling holiday displays — <span className="font-bold italic text-brand-gold">Be The Light Decor</span> transforms homes and businesses across Southeast Louisiana.
             </p>
-
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/contact"
@@ -91,8 +92,6 @@ export default function HomePage() {
                 (504) 389-6555
               </a>
             </div>
-
-            {/* Quick stats */}
             <div className="flex flex-wrap gap-8 mt-14 pt-10 border-t border-white/10">
               {[
                 { value: "500+", label: "Projects Completed" },
@@ -110,23 +109,19 @@ export default function HomePage() {
       </section>
 
       {/* Services */}
-      <section className="py-20 relative overflow-hidden bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+      <section className="py-20 relative overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/75" />
         <div className="absolute top-0 right-0 w-48 h-48 md:w-[420px] md:h-[420px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="absolute bottom-0 left-0 w-40 h-40 md:w-72 md:h-72 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-3">
-              What We Do
-            </p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">
-              Our Lighting Services
-            </h2>
+            <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-3">What We Do</p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white mb-4">Our Lighting Services</h2>
             <p className="font-body text-white/60 text-lg max-w-2xl mx-auto">
               Professional outdoor lighting solutions for every need — residential, commercial, seasonal, and special events.
             </p>
           </div>
-
           <div className="flex flex-wrap justify-center gap-6">
             {services.map((svc) => (
               <Link
@@ -134,7 +129,6 @@ export default function HomePage() {
                 href={svc.href}
                 className="group relative rounded-2xl overflow-hidden block w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] aspect-[3/4] bg-surface-dark shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                {/* Photo */}
                 <Image
                   src={svc.image}
                   alt={`${svc.title} by Be The Light Decor`}
@@ -142,16 +136,10 @@ export default function HomePage() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-                {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="font-heading text-xl font-bold text-white mb-2">
-                    {svc.title}
-                  </h3>
-                  <p className="font-body text-white/75 text-sm leading-relaxed mb-4">
-                    {svc.description}
-                  </p>
+                  <h3 className="font-heading text-xl font-bold text-white mb-2">{svc.title}</h3>
+                  <p className="font-body text-white/75 text-sm leading-relaxed mb-4">{svc.description}</p>
                   <div className="inline-flex items-center gap-1.5 text-brand-green-bright text-sm font-body font-semibold group-hover:gap-3 transition-all duration-200">
                     Learn More <ArrowRight size={14} />
                   </div>
@@ -163,7 +151,8 @@ export default function HomePage() {
       </section>
 
       {/* Video */}
-      <section className="py-20 relative overflow-hidden bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+      <section className="py-20 relative overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/82" />
         <div className="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
         <div className="absolute bottom-0 left-0 w-40 h-40 md:w-80 md:h-80 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 70%)" }} />
@@ -193,7 +182,6 @@ export default function HomePage() {
       <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: photo */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-surface-dark shadow-xl">
               <Image
                 src="/images/about-preview.jpg"
@@ -213,19 +201,12 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
-            {/* Right: content */}
             <div>
-              <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
-                Why Choose Us
-              </p>
-              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-5">
-                Local. Trusted. Family Owned.
-              </h2>
+              <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">Why Choose Us</p>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-5">Local. Trusted. Family Owned.</h2>
               <p className="font-body text-gray-600 text-lg leading-relaxed mb-8">
                 We&apos;re not a national chain — we&apos;re your neighbors. Every project is handled personally by our team, and we stand behind every installation we make.
               </p>
-
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
                 {reasons.map((reason) => (
                   <li key={reason} className="flex items-center gap-3">
@@ -234,18 +215,11 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-
               <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/about"
-                  className="bg-brand-green hover:bg-brand-green/90 text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors"
-                >
+                <Link href="/about" className="bg-brand-green hover:bg-brand-green/90 text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors">
                   Our Story
                 </Link>
-                <Link
-                  href="/gallery"
-                  className="border-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors"
-                >
+                <Link href="/gallery" className="border-2 border-[#1a1a1a] text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white font-heading font-bold text-sm uppercase tracking-wider px-7 py-3.5 rounded-full transition-colors">
                   See Our Work
                 </Link>
               </div>
@@ -260,21 +234,13 @@ export default function HomePage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-              <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-2">
-                Portfolio
-              </p>
-              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white">
-                Recent Projects
-              </h2>
+              <p className="text-brand-gold font-body font-semibold text-sm uppercase tracking-widest mb-2">Portfolio</p>
+              <h2 className="font-heading text-4xl lg:text-5xl font-bold text-white">Recent Projects</h2>
             </div>
-            <Link
-              href="/gallery"
-              className="flex items-center gap-2 text-brand-gold font-body font-semibold hover:text-white transition-colors shrink-0"
-            >
+            <Link href="/gallery" className="flex items-center gap-2 text-brand-gold font-body font-semibold hover:text-white transition-colors shrink-0">
               View Full Gallery <ArrowRight size={16} />
             </Link>
           </div>
-
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
               { src: "/images/service-landscape.jpg", alt: "Landscape lighting project by Be The Light Decor" },
@@ -307,12 +273,8 @@ export default function HomePage() {
       <section className="py-24" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
-              Reviews
-            </p>
-            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">
-              What Our Customers Say
-            </h2>
+            <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">Reviews</p>
+            <h2 className="font-heading text-4xl lg:text-5xl font-bold text-[#1a1a1a] mb-4">What Our Customers Say</h2>
             <div className="flex justify-center gap-1 mb-3">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} size={22} className="text-brand-gold fill-brand-gold" />
@@ -320,7 +282,6 @@ export default function HomePage() {
             </div>
             <p className="font-body text-gray-500 text-sm">4.8 average · 100+ reviews on Google</p>
           </div>
-
           <div className="rounded-3xl shadow-xl overflow-hidden bg-white p-2">
             <div className="elfsight-app-693ca860-e97d-438b-a949-9ee394b9bd5a" data-elfsight-app-lazy></div>
           </div>
@@ -330,12 +291,8 @@ export default function HomePage() {
       {/* Service Areas */}
       <section className="py-16" style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fdf0c0 50%, #fef6e0 100%)" }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">
-            Coverage
-          </p>
-          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-8">
-            We Serve Southeast Louisiana
-          </h2>
+          <p className="text-amber-600 font-body font-semibold text-sm uppercase tracking-widest mb-3">Coverage</p>
+          <h2 className="font-heading text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-8">We Serve Southeast Louisiana</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {serviceAreas.map((area) => (
               <span
@@ -348,10 +305,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="mt-8">
-            <Link
-              href="/service-area"
-              className="text-brand-green font-body font-semibold hover:underline text-sm inline-flex items-center gap-1.5"
-            >
+            <Link href="/service-area" className="text-brand-green font-body font-semibold hover:underline text-sm inline-flex items-center gap-1.5">
               View Full Service Area <ArrowRight size={14} />
             </Link>
           </div>
@@ -359,11 +313,11 @@ export default function HomePage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="relative py-32 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+      <section className="relative py-32 overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/72" />
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-48 h-48 md:w-[500px] md:h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
-
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 text-brand-gold px-5 py-1.5 rounded-full text-xs font-body font-semibold uppercase tracking-widest mb-8">
             Free Estimates · No Obligation

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -33,10 +34,8 @@ export default function Footer() {
   return (
     <footer>
       {/* ── Newsletter — dramatic dark photo section ── */}
-      <div
-        className="relative py-20 px-4 bg-cover bg-center bg-scroll md:bg-fixed overflow-hidden"
-        style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-      >
+      <div className="relative py-20 px-4 overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         {/* Dark warm overlay */}
         <div className="absolute inset-0 bg-black/78" />
 

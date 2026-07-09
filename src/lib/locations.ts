@@ -507,6 +507,631 @@ export const locations: Location[] = [
       },
     ],
   },
+
+  // ── NEW LOUISIANA CITIES ──────────────────────────────────────────────────
+
+  {
+    slug: "harahan",
+    name: "Harahan",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Jefferson Parish",
+    metaTitle: "Outdoor Lighting in Harahan, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor installs landscape lighting, holiday displays, and permanent outdoor lighting in Harahan, Louisiana. Serving Jefferson Parish with full-service outdoor lighting.",
+    heroHeading: "Outdoor Lighting in Harahan, Louisiana",
+    heroSubheading: "Classic Jefferson Parish neighborhoods, beautifully lit.",
+    introParagraphs: [
+      "Harahan is a quiet, established Jefferson Parish community tucked between Kenner and River Ridge, known for its tree-lined streets, well-maintained ranch homes, and strong neighborhood pride. It's exactly the kind of place where landscape lighting — done right — transforms a property and makes the whole block look better.",
+      "We serve Harahan regularly as part of our Jefferson Parish work, often scheduling it alongside River Ridge and Kenner projects. Whether you're looking for simple path lighting along a manicured lawn or a full holiday display for the holiday season, we bring the same professionalism here that we deliver across the Northshore.",
+    ],
+    neighborhoods: [
+      "Elmwood area",
+      "Hickory Park",
+      "West Harahan",
+      "Harahan waterfront",
+    ],
+    faq: [
+      {
+        q: "Do you serve Harahan for holiday lighting?",
+        a: "Yes. Holiday lighting is one of the most requested services in Harahan and the surrounding Jefferson Parish communities. We hang, maintain, and take it all down — you never touch a bulb.",
+      },
+      {
+        q: "Can you match the lighting to our existing landscaping in Harahan?",
+        a: "Absolutely. We walk every property before designing anything. We look at your existing plants, trees, and architectural features and create a system that feels intentional — not like a generic add-on.",
+      },
+    ],
+  },
+  {
+    slug: "river-ridge",
+    name: "River Ridge",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Jefferson Parish",
+    metaTitle: "Outdoor Lighting in River Ridge, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves River Ridge, Louisiana with landscape lighting, holiday displays, and permanent outdoor lighting. Full-service Jefferson Parish lighting.",
+    heroHeading: "Outdoor Lighting in River Ridge, Louisiana",
+    heroSubheading: "Riverside living, elevated after dark.",
+    introParagraphs: [
+      "River Ridge sits along the Mississippi River corridor in Jefferson Parish, with a mix of established neighborhoods and newer developments that have seen strong reinvestment over the past decade. Homes here tend to be well-kept, with mature landscaping that rewards thoughtful outdoor lighting — uplighting for live oaks, path lighting through established gardens, and roofline accents that add architectural depth.",
+      "We serve River Ridge regularly as part of our Jefferson Parish schedule. Landscape lighting and holiday lighting are our most-requested services in this area. If you're in River Ridge and looking to upgrade your outdoor space after dark, we'd love to walk the property with you.",
+    ],
+    neighborhoods: [
+      "River Ridge proper",
+      "Citrus area",
+      "Upstream neighborhoods",
+      "Mississippi River corridor",
+    ],
+    faq: [
+      {
+        q: "How does River Ridge compare to Harahan and Kenner for lighting demand?",
+        a: "They're all strong markets for us. River Ridge tends to skew toward landscape lighting and permanent systems, while Kenner and Harahan see more holiday lighting requests. We serve all three regularly.",
+      },
+      {
+        q: "Do you do free estimates in River Ridge?",
+        a: "Yes. We offer free on-site estimates across all of Jefferson Parish, including River Ridge. We'll come out, walk the property, and give you a detailed quote — no obligation.",
+      },
+    ],
+  },
+  {
+    slug: "gretna",
+    name: "Gretna",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Jefferson Parish",
+    metaTitle: "Outdoor Lighting in Gretna, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Gretna, Louisiana with landscape lighting, holiday lighting, and permanent outdoor lighting. Westbank Jefferson Parish service.",
+    heroHeading: "Outdoor Lighting in Gretna, Louisiana",
+    heroSubheading: "Westbank Jefferson Parish, fully served.",
+    introParagraphs: [
+      "Gretna is one of the Westbank's most established communities — a historic downtown, a diverse residential mix, and a growing commercial corridor that benefits from professional exterior lighting. We serve Gretna and the broader Westbank area with landscape lighting, holiday displays, and permanent programmable systems for homes and businesses.",
+      "Westbank communities are sometimes underserved by contractors who focus exclusively on the Eastbank. We don't operate that way — if your property is in Gretna, Harvey, Westwego, or Marrero, we'll get to you. Gretna's older homes in particular are excellent candidates for landscape lighting that highlights the character of the architecture.",
+    ],
+    neighborhoods: [
+      "Historic Downtown Gretna",
+      "Oakwood area",
+      "McDonoughville",
+      "Fischer area",
+    ],
+    faq: [
+      {
+        q: "Do you serve the Westbank — Gretna, Harvey, and Marrero?",
+        a: "Yes. We serve all of the Westbank Jefferson Parish area, including Gretna, Harvey, Westwego, and Marrero. We schedule Westbank projects together to keep our travel efficient.",
+      },
+      {
+        q: "Can you do commercial lighting for businesses along the Westbank Expressway corridor?",
+        a: "Yes. Commercial exterior lighting on a high-traffic corridor like the Westbank Expressway can meaningfully impact visibility and brand perception. Contact us to discuss your property.",
+      },
+    ],
+  },
+  {
+    slug: "westwego",
+    name: "Westwego",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Jefferson Parish",
+    metaTitle: "Outdoor Lighting in Westwego, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor installs landscape lighting and holiday lighting in Westwego, Louisiana. Serving the Westbank of Jefferson Parish with professional outdoor lighting.",
+    heroHeading: "Outdoor Lighting in Westwego, Louisiana",
+    heroSubheading: "Where the bayou meets the boulevard — lit beautifully.",
+    introParagraphs: [
+      "Westwego is a compact, tight-knit Westbank community bordered by bayous and canals, with a strong residential character and steady commercial activity near the Huey P. Long Bridge approach. Homes here range from older cottages with big yards to newer construction near the city's growing residential corridors — all of them candidates for outdoor lighting that improves curb appeal and security.",
+      "We serve Westwego as part of our regular Westbank Jefferson Parish schedule. Landscape lighting and holiday lighting are popular here, and we offer free on-site estimates to help homeowners see the possibilities before committing to anything.",
+    ],
+    neighborhoods: [
+      "Downtown Westwego",
+      "Bayou Segnette area",
+      "Avenue B corridor",
+      "West Westwego",
+    ],
+    faq: [
+      {
+        q: "Does Be The Light Decor serve Westwego for holiday lighting?",
+        a: "Yes. We install full holiday lighting packages in Westwego — we hang everything, check the lights mid-season if needed, and take it all down after the holidays. One call is all it takes.",
+      },
+      {
+        q: "Can you install lighting near bayous and canals in Westwego?",
+        a: "Absolutely. Waterfront and bayou-adjacent properties are a specialty — we use weather-resistant fixtures rated for high-moisture environments and design the lighting to complement the water setting.",
+      },
+    ],
+  },
+  {
+    slug: "abita-springs",
+    name: "Abita Springs",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "St. Tammany Parish",
+    metaTitle: "Outdoor Lighting in Abita Springs, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Abita Springs, Louisiana with landscape lighting, holiday lighting, and permanent outdoor lighting. Local Northshore service just minutes from Covington.",
+    heroHeading: "Outdoor Lighting in Abita Springs, Louisiana",
+    heroSubheading: "Northshore personality, naturally lit.",
+    introParagraphs: [
+      "Abita Springs is one of the Northshore's most distinctive communities — known for its artisan breweries, ecentric local charm, and large wooded lots where mature pine and oak trees define the landscape. Outdoor lighting here is less about showing off and more about coexisting with the natural setting. We design systems that feel intentional, not imposed.",
+      "Being just a few miles from our Covington base, Abita Springs is one of our quickest turnarounds for estimates and installations. We've worked on everything from craftsman-style homes in town to larger rural properties on the outskirts, always adapting the design to what the land actually offers.",
+    ],
+    neighborhoods: [
+      "Downtown Abita Springs",
+      "Abita River Road area",
+      "Abita Heights",
+      "Rural North St. Tammany",
+    ],
+    faq: [
+      {
+        q: "Can you design lighting that works with our wooded lot in Abita Springs?",
+        a: "Yes — wooded lots are some of our favorite projects. We'll design a system that highlights the tree canopy, illuminates key paths, and creates a layered effect that feels natural rather than overdone.",
+      },
+      {
+        q: "Do you serve rural properties on larger acreage outside of Abita Springs proper?",
+        a: "Yes. We regularly serve properties on larger rural lots in the Abita Springs area, including homes along state highways and parish roads outside of town. Long driveways, gated entries, and acreage lighting are all part of what we do.",
+      },
+    ],
+  },
+  {
+    slug: "folsom",
+    name: "Folsom",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "St. Tammany Parish",
+    metaTitle: "Outdoor Lighting in Folsom, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Folsom, Louisiana with landscape lighting, holiday lighting, and outdoor lighting for rural and residential properties in St. Tammany Parish.",
+    heroHeading: "Outdoor Lighting in Folsom, Louisiana",
+    heroSubheading: "Rural Northshore properties lit with care.",
+    introParagraphs: [
+      "Folsom is deep St. Tammany Parish — horse farms, large wooded lots, and a peaceful rural character that sets it apart from the more developed communities closer to I-12. Outdoor lighting on rural acreage requires a different approach than suburban neighborhoods: longer driveway runs, motion-activated security lighting, barn and outbuilding illumination, and landscape lighting that fits a pastoral rather than manicured setting.",
+      "We serve Folsom and northern St. Tammany Parish as part of our broader service area. It's a longer drive from Covington, but we schedule these projects regularly and take them just as seriously as any other job. If you have a rural property in the Folsom area and want to talk lighting, give us a call.",
+    ],
+    neighborhoods: [
+      "Folsom town center",
+      "Rural north St. Tammany",
+      "Seven Oaks area",
+      "Hwy 25 corridor",
+    ],
+    faq: [
+      {
+        q: "Do you serve farm and acreage properties in Folsom?",
+        a: "Yes. We design lighting for working farms, horse properties, and rural estates — including driveway lighting, barn and outbuilding illumination, perimeter security lighting, and landscape accents around the main residence.",
+      },
+      {
+        q: "How far does Be The Light Decor travel to serve Folsom?",
+        a: "Folsom is roughly 30 minutes north of Covington. We schedule Folsom projects on days when we're working in northern St. Tammany Parish. Contact us to get on the schedule.",
+      },
+    ],
+  },
+  {
+    slug: "franklinton",
+    name: "Franklinton",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Washington Parish",
+    metaTitle: "Outdoor Lighting in Franklinton, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Franklinton, Louisiana with landscape lighting, holiday lighting, and outdoor lighting installation. Serving Washington Parish and surrounding communities.",
+    heroHeading: "Outdoor Lighting in Franklinton, Louisiana",
+    heroSubheading: "Washington Parish's outdoor lighting team.",
+    introParagraphs: [
+      "Franklinton is the seat of Washington Parish — a community with a lot of residential character, an active main street, and a surrounding rural landscape of timber-producing woodlands and farmland. Outdoor lighting here serves both aesthetic and practical purposes, and we approach each project with that balance in mind.",
+      "We serve Franklinton and the broader Washington Parish area on a scheduled basis. Whether you're in a neighborhood subdivision, a property on the edge of town, or a rural acreage outside the city limits, we can design a lighting solution that fits your property and your budget.",
+    ],
+    neighborhoods: [
+      "Downtown Franklinton",
+      "Northeast Franklinton",
+      "Franklinton residential neighborhoods",
+      "Rural Washington Parish",
+    ],
+    faq: [
+      {
+        q: "Does Be The Light Decor serve Washington Parish?",
+        a: "Yes. We serve Franklinton and surrounding Washington Parish communities. We schedule this area periodically and can get you on the calendar for a free estimate.",
+      },
+      {
+        q: "What lighting services do you offer in the Franklinton area?",
+        a: "All of our services — landscape lighting, holiday lighting, permanent lighting, event lighting, and commercial lighting — are available in the Franklinton area. Distance doesn't change our offering.",
+      },
+    ],
+  },
+  {
+    slug: "pearl-river",
+    name: "Pearl River",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "St. Tammany Parish",
+    metaTitle: "Outdoor Lighting in Pearl River, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Pearl River, Louisiana with landscape lighting, holiday lighting, and outdoor lighting installation. Northshore St. Tammany Parish service.",
+    heroHeading: "Outdoor Lighting in Pearl River, Louisiana",
+    heroSubheading: "Northshore lighting near the Mississippi border.",
+    introParagraphs: [
+      "Pearl River is a St. Tammany Parish community that straddles the border with Mississippi, connected to Slidell but with its own distinct character — larger lots, wooded properties, and a quieter pace than the more developed parts of the Northshore. It's a great setting for outdoor lighting that feels natural rather than suburban.",
+      "We serve Pearl River as part of our eastern St. Tammany Parish work, often scheduling it alongside Slidell and Lacombe. Landscape lighting on larger wooded lots, holiday lighting, and permanent roofline systems are all popular in this area.",
+    ],
+    neighborhoods: [
+      "Pearl River town center",
+      "West Pearl River",
+      "Hwy 11 corridor",
+      "Rural east St. Tammany",
+    ],
+    faq: [
+      {
+        q: "Is Pearl River within your regular service area?",
+        a: "Yes. Pearl River is within St. Tammany Parish and is a regular stop for our eastern Northshore team. We can typically schedule estimates within the week.",
+      },
+      {
+        q: "What types of outdoor lighting work best in Pearl River's wooded properties?",
+        a: "For wooded lots, we recommend layered landscape lighting: uplighting for canopy trees, path lighting along driveways and walkways, and security-oriented accent lighting near structures. We design systems that work with the existing tree cover rather than fighting it.",
+      },
+    ],
+  },
+  {
+    slug: "bogalusa",
+    name: "Bogalusa",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Washington Parish",
+    metaTitle: "Outdoor Lighting in Bogalusa, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Bogalusa, Louisiana with landscape lighting, holiday lighting, and outdoor lighting installation. Covering Washington Parish and the north Louisiana border region.",
+    heroHeading: "Outdoor Lighting in Bogalusa, Louisiana",
+    heroSubheading: "Serving Washington Parish's largest city.",
+    introParagraphs: [
+      "Bogalusa is Washington Parish's largest city and the commercial hub of the region — a mix of established residential neighborhoods, commercial corridors, and a proud industrial heritage. Outdoor lighting here serves both homeowners who want curb appeal and businesses that benefit from better visibility and professional exterior presentation.",
+      "We serve Bogalusa and the surrounding Washington Parish area, scheduling visits periodically to minimize drive time and deliver the same quality we bring to every project. From simple holiday displays to full landscape lighting systems, we handle the full range.",
+    ],
+    neighborhoods: [
+      "Downtown Bogalusa",
+      "North Bogalusa",
+      "East Bogalusa",
+      "Louisiana Avenue corridor",
+      "Rural Washington Parish",
+    ],
+    faq: [
+      {
+        q: "Do you serve Bogalusa for holiday lighting?",
+        a: "Yes. We install, maintain, and remove holiday lighting in Bogalusa. We schedule these projects in advance and appreciate early bookings to ensure availability.",
+      },
+      {
+        q: "Can you do commercial lighting for businesses in Bogalusa?",
+        a: "Yes. Commercial outdoor lighting is one of our five core services, and we bring it to every market we serve — including Bogalusa. Storefronts, office buildings, and commercial properties all benefit from professional exterior lighting.",
+      },
+    ],
+  },
+  {
+    slug: "denham-springs",
+    name: "Denham Springs",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Livingston Parish",
+    metaTitle: "Outdoor Lighting in Denham Springs, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Denham Springs, Louisiana with landscape lighting, holiday displays, and permanent outdoor lighting. Livingston Parish service near Baton Rouge.",
+    heroHeading: "Outdoor Lighting in Denham Springs, Louisiana",
+    heroSubheading: "Livingston Parish — where curb appeal is a way of life.",
+    introParagraphs: [
+      "Denham Springs has experienced explosive residential growth over the past decade, making it one of the fastest-growing communities in Southeast Louisiana. New subdivisions, established neighborhoods, and a busy commercial corridor along I-12 all present strong opportunities for professional outdoor lighting. Homeowners here invest heavily in their properties, and lighting is an increasingly important part of that investment.",
+      "We serve Denham Springs and the broader Livingston Parish area on a scheduled basis. Our permanent landscape lighting systems are especially popular here — new construction homes are great candidates for systems installed alongside the initial landscaping, creating a cohesive look from day one.",
+    ],
+    neighborhoods: [
+      "Bass Pro Shops area",
+      "Walker nearby",
+      "Juban Crossing area",
+      "Southeast Denham Springs",
+      "Livingston Parish rural areas",
+    ],
+    faq: [
+      {
+        q: "Do you serve newly built homes in Denham Springs?",
+        a: "Yes — new construction is one of our sweet spots. Installing landscape lighting as part of the initial landscaping phase saves time and produces a cleaner, more intentional result than retrofitting later.",
+      },
+      {
+        q: "How long does it take to get to Denham Springs from your Covington base?",
+        a: "Denham Springs is roughly 90 minutes from Covington via I-12. We schedule Livingston Parish work in batches to keep travel costs reasonable. We'll find a time that works.",
+      },
+    ],
+  },
+  {
+    slug: "gonzales",
+    name: "Gonzales",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Ascension Parish",
+    metaTitle: "Outdoor Lighting in Gonzales, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Gonzales, Louisiana with landscape lighting, holiday lighting, and permanent outdoor lighting. Serving Ascension Parish with full-service outdoor lighting.",
+    heroHeading: "Outdoor Lighting in Gonzales, Louisiana",
+    heroSubheading: "Ascension Parish's premier outdoor lighting team.",
+    introParagraphs: [
+      "Gonzales has grown dramatically as an Ascension Parish hub, with new residential developments, a thriving commercial district, and a homeowner base that takes exterior appearances seriously. The phrase 'Jambalaya Capital of the World' says a lot about the community pride here — and that pride extends to how properties look from the street.",
+      "We serve Gonzales and all of Ascension Parish. Landscape lighting, permanent roofline systems, and holiday lighting are all in demand in this market. We offer free on-site estimates and can typically schedule work within two weeks of a signed agreement.",
+    ],
+    neighborhoods: [
+      "Downtown Gonzales",
+      "Prairieville area",
+      "Cornerview area",
+      "Tanger Outlets corridor",
+      "Ascension Parish residential",
+    ],
+    faq: [
+      {
+        q: "Do you serve both Gonzales and Prairieville?",
+        a: "Yes. We serve all of Ascension Parish, including Gonzales, Prairieville, Sorrento, and St. Amant. We schedule these communities together on our Ascension Parish workdays.",
+      },
+      {
+        q: "Is permanent lighting popular in Gonzales?",
+        a: "It's growing quickly. Ascension Parish homeowners are increasingly interested in permanent LED roofline systems that can be programmed for any season or occasion — holiday colors, LSU game nights, special events. It's a one-time install with years of versatility.",
+      },
+    ],
+  },
+  {
+    slug: "laplace",
+    name: "LaPlace",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "St. John the Baptist Parish",
+    metaTitle: "Outdoor Lighting in LaPlace, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves LaPlace, Louisiana with landscape lighting, holiday lighting, and outdoor lighting installation. Serving St. John the Baptist Parish between New Orleans and Baton Rouge.",
+    heroHeading: "Outdoor Lighting in LaPlace, Louisiana",
+    heroSubheading: "Between two great cities — served by one great team.",
+    introParagraphs: [
+      "LaPlace sits at the crossroads of Southeast Louisiana — roughly equidistant from New Orleans and Baton Rouge along I-10, making it one of the most strategically located communities in the region. Residents here have access to major city amenities while living in a quieter, more spacious setting, and the investment in well-maintained homes reflects that balance.",
+      "We serve LaPlace and St. John the Baptist Parish with the full range of our services. Holiday lighting and landscape lighting are both popular here, and our permanent roofline systems are a great fit for the newer subdivisions that have grown up around the LaPlace corridor.",
+    ],
+    neighborhoods: [
+      "Woodland Park",
+      "Cypress Grove area",
+      "Belle Terre",
+      "Reserve nearby",
+      "Norco area",
+    ],
+    faq: [
+      {
+        q: "Is LaPlace within your service area?",
+        a: "Yes. We serve LaPlace and all of St. John the Baptist Parish. We typically schedule this area alongside our West Shore and River Parish projects.",
+      },
+      {
+        q: "Do you offer holiday lighting packages in LaPlace?",
+        a: "Yes. Full holiday lighting packages — install, maintenance check, and takedown — are available in LaPlace and throughout our service area.",
+      },
+    ],
+  },
+  {
+    slug: "prairieville",
+    name: "Prairieville",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "Ascension Parish",
+    metaTitle: "Outdoor Lighting in Prairieville, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Prairieville, Louisiana with landscape lighting, holiday displays, and permanent outdoor lighting. Full-service Ascension Parish outdoor lighting.",
+    heroHeading: "Outdoor Lighting in Prairieville, Louisiana",
+    heroSubheading: "Fast-growing Ascension Parish — beautifully illuminated.",
+    introParagraphs: [
+      "Prairieville is one of Louisiana's fastest-growing residential communities — new subdivisions are going up faster than almost anywhere else in the state, and homeowners in these new neighborhoods are looking for ways to stand out from the house next door. Landscape lighting and permanent roofline systems are ideal for new construction where the landscaping is just getting established.",
+      "We serve Prairieville as part of our Ascension Parish coverage, often scheduling it alongside Gonzales and the greater Baton Rouge corridor. Our team knows this market well and understands the specific mix of new-build and established neighborhoods that defines Prairieville's residential landscape.",
+    ],
+    neighborhoods: [
+      "Manchac Heights area",
+      "Bayou Oaks area",
+      "Hwy 73 corridor",
+      "East Ascension Parish",
+      "New construction subdivisions",
+    ],
+    faq: [
+      {
+        q: "Do you install lighting on new construction in Prairieville?",
+        a: "Yes, and we highly recommend it. Installing landscape lighting alongside new landscaping gives you a clean, intentional look that's harder to achieve on an established property. We work with homebuilders and homeowners directly.",
+      },
+      {
+        q: "Is permanent roofline lighting popular in Prairieville?",
+        a: "Very. Prairieville's newer neighborhoods are a perfect fit for our permanent LED system — hidden channels along the roofline that you control from an app. One install, endless color options. It's especially popular for holiday displays without the hassle.",
+      },
+    ],
+  },
+  {
+    slug: "zachary",
+    name: "Zachary",
+    state: "Louisiana",
+    stateAbbr: "LA",
+    county: "East Baton Rouge Parish",
+    metaTitle: "Outdoor Lighting in Zachary, LA | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Zachary, Louisiana with landscape lighting, holiday lighting, and permanent outdoor lighting. East Baton Rouge Parish outdoor lighting service.",
+    heroHeading: "Outdoor Lighting in Zachary, Louisiana",
+    heroSubheading: "North Baton Rouge's outdoor lighting specialists.",
+    introParagraphs: [
+      "Zachary has developed into one of the most desirable residential communities north of Baton Rouge — excellent schools, new neighborhoods, and homeowners who take obvious pride in their properties. That pride creates a natural market for landscape lighting that adds curb appeal and a sense of arrival after dark.",
+      "We serve Zachary as part of our East Baton Rouge Parish coverage. Permanent landscape lighting and holiday displays are our most common services here, and we offer free on-site estimates so you can see exactly what's possible before committing to anything.",
+    ],
+    neighborhoods: [
+      "Downtown Zachary",
+      "Pride area",
+      "Antebellum neighborhoods",
+      "Hwy 19 corridor",
+      "East Zachary residential",
+    ],
+    faq: [
+      {
+        q: "Do you serve Zachary for landscape lighting?",
+        a: "Yes. Zachary is within our East Baton Rouge Parish service area. We schedule this area alongside our Baton Rouge projects and can typically turn around estimates within two weeks.",
+      },
+      {
+        q: "What's your most popular service in the Zachary area?",
+        a: "Landscape lighting and holiday lighting are both popular in Zachary. We're also seeing strong interest in permanent roofline lighting as newer neighborhoods continue to grow in the area.",
+      },
+    ],
+  },
+
+  // ── NEW MISSISSIPPI CITIES ────────────────────────────────────────────────
+
+  {
+    slug: "waveland",
+    name: "Waveland",
+    state: "Mississippi",
+    stateAbbr: "MS",
+    county: "Hancock County",
+    metaTitle: "Outdoor Lighting in Waveland, MS | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Waveland, Mississippi with landscape lighting, holiday lighting, and permanent outdoor lighting. Gulf Coast Hancock County service.",
+    heroHeading: "Outdoor Lighting in Waveland, Mississippi",
+    heroSubheading: "Mississippi's westernmost Gulf Coast community, beautifully lit.",
+    introParagraphs: [
+      "Waveland is the westernmost city on the Mississippi Gulf Coast — close to Louisiana, close to the water, and home to a mix of beach cottages, post-Katrina new construction, and vacation properties that attract owners from across the region. The community has rebuilt its character over the past two decades, and outdoor lighting plays a quiet but meaningful role in that renewal.",
+      "We serve Waveland alongside Bay St. Louis and other Hancock County communities as part of our Gulf Coast coverage. Because of our Louisiana base, we're actually closer to Waveland than many Mississippi-based contractors, and we bring coastal-rated fixtures and proven installation techniques to every project here.",
+    ],
+    neighborhoods: [
+      "Waveland beachfront",
+      "Downtown Waveland",
+      "North Waveland",
+      "Bay St. Louis border area",
+    ],
+    faq: [
+      {
+        q: "Is Waveland within your service area?",
+        a: "Yes. Waveland is one of our closest Mississippi Gulf Coast stops — it's actually closer to our Covington base than some of our Louisiana service areas. We schedule it alongside Bay St. Louis.",
+      },
+      {
+        q: "Do you install marine-grade fixtures in Waveland because of the salt environment?",
+        a: "Always. On the Gulf Coast, we exclusively use fixtures rated for salt-air environments — sealed connections, corrosion-resistant finishes, and materials designed to hold up through coastal humidity and storm exposure.",
+      },
+    ],
+  },
+  {
+    slug: "pass-christian",
+    name: "Pass Christian",
+    state: "Mississippi",
+    stateAbbr: "MS",
+    county: "Harrison County",
+    metaTitle: "Outdoor Lighting in Pass Christian, MS | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Pass Christian, Mississippi with landscape lighting, holiday lighting, and outdoor lighting installation. Harrison County Gulf Coast service.",
+    heroHeading: "Outdoor Lighting in Pass Christian, Mississippi",
+    heroSubheading: "The Pass — lit with Gulf Coast character.",
+    introParagraphs: [
+      "Pass Christian is one of the Gulf Coast's most beloved communities — known for its antebellum homes, its striking oak-lined beachfront drives, and a deeply rooted sense of place that survived even Hurricane Katrina. Outdoor lighting here isn't just functional; it's part of how residents honor the character and history of their community.",
+      "We serve Pass Christian and the surrounding Harrison County communities with landscape lighting, holiday displays, and permanent systems designed to hold up against Gulf Coast conditions. Antebellum and historic properties receive our most careful design attention — we never overpower architecture that speaks for itself.",
+    ],
+    neighborhoods: [
+      "Pass Christian beachfront",
+      "Historic downtown",
+      "Long Beach border area",
+      "North Pass Christian",
+    ],
+    faq: [
+      {
+        q: "Can you design lighting for historic and antebellum homes in Pass Christian?",
+        a: "Yes, and it's work we take seriously. Historic homes require restraint — we use warm-toned fixtures, subtle placement, and designs that enhance rather than compete with the existing architecture.",
+      },
+      {
+        q: "Do you do holiday lighting in Pass Christian?",
+        a: "Yes. Holiday lighting is a big part of what we do on the Gulf Coast during the season. We install, handle any mid-season maintenance, and take everything down afterward.",
+      },
+    ],
+  },
+  {
+    slug: "long-beach",
+    name: "Long Beach",
+    state: "Mississippi",
+    stateAbbr: "MS",
+    county: "Harrison County",
+    metaTitle: "Outdoor Lighting in Long Beach, MS | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Long Beach, Mississippi with landscape lighting, holiday displays, and permanent outdoor lighting. Harrison County Gulf Coast outdoor lighting.",
+    heroHeading: "Outdoor Lighting in Long Beach, Mississippi",
+    heroSubheading: "Harrison County living, elevated after dark.",
+    introParagraphs: [
+      "Long Beach is a family-friendly Harrison County community situated between Gulfport and Pass Christian, with a coastal character and a residential base that values quality and community. The city has grown steadily since Katrina recovery and is home to a mix of established neighborhoods and newer developments that benefit from professional outdoor lighting.",
+      "We serve Long Beach as part of our Gulf Coast Harrison County schedule. Landscape lighting and holiday lighting are both in demand here, and our permanent roofline LED systems are a great option for newer construction that wants year-round programmable lighting without annual installation hassle.",
+    ],
+    neighborhoods: [
+      "Long Beach beachfront",
+      "North Long Beach",
+      "East Long Beach",
+      "Southern Miss Gulf Coast area",
+    ],
+    faq: [
+      {
+        q: "Do you serve Long Beach for both landscape and holiday lighting?",
+        a: "Yes. Both services are available in Long Beach. We schedule Gulf Coast Harrison County work together, so your project gets handled efficiently regardless of which service you need.",
+      },
+      {
+        q: "What fixture types do you recommend near the coast in Long Beach?",
+        a: "All of our Gulf Coast installations use coastal-rated fixtures — corrosion-resistant materials, sealed connections, and UV-stable finishes designed for the specific challenges of salt-air and high-humidity environments.",
+      },
+    ],
+  },
+  {
+    slug: "picayune",
+    name: "Picayune",
+    state: "Mississippi",
+    stateAbbr: "MS",
+    county: "Pearl River County",
+    metaTitle: "Outdoor Lighting in Picayune, MS | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Picayune, Mississippi with landscape lighting, holiday lighting, and outdoor lighting installation. Pearl River County, MS — just across the Louisiana border.",
+    heroHeading: "Outdoor Lighting in Picayune, Mississippi",
+    heroSubheading: "Pearl River County — close to Louisiana, served like home.",
+    introParagraphs: [
+      "Picayune sits in Pearl River County just across the Louisiana-Mississippi border, making it one of the most accessible Mississippi markets for our Covington-based team. Many Picayune residents work, shop, and spend time on the Louisiana Northshore — and they deserve the same quality of outdoor lighting service.",
+      "We serve Picayune with landscape lighting, holiday displays, and permanent lighting systems for both residential and commercial properties. The piney woods setting and larger lot sizes in the Picayune area are well-suited to the kind of thoughtful, naturalistic lighting design we do best.",
+    ],
+    neighborhoods: [
+      "Downtown Picayune",
+      "Highland Park area",
+      "Crosby area",
+      "Rural Pearl River County",
+    ],
+    faq: [
+      {
+        q: "Is Picayune within your regular service area?",
+        a: "Yes. Picayune is very close to our base — we're in and out of the Pearl River County area regularly. Estimates are typically available within the week.",
+      },
+      {
+        q: "Do you design lighting for the piney woods setting typical of Picayune properties?",
+        a: "Yes. Pine trees and wooded lots require a different approach than coastal or suburban landscapes. We design layered systems that work with the natural topography rather than imposing a suburban template.",
+      },
+    ],
+  },
+  {
+    slug: "ocean-springs",
+    name: "Ocean Springs",
+    state: "Mississippi",
+    stateAbbr: "MS",
+    county: "Jackson County",
+    metaTitle: "Outdoor Lighting in Ocean Springs, MS | Be The Light Decor",
+    metaDescription:
+      "Be The Light Decor serves Ocean Springs, Mississippi with landscape lighting, holiday lighting, and permanent outdoor lighting. Jackson County Gulf Coast outdoor lighting service.",
+    heroHeading: "Outdoor Lighting in Ocean Springs, Mississippi",
+    heroSubheading: "The Gulf Coast's art town — illuminated beautifully.",
+    introParagraphs: [
+      "Ocean Springs is one of the jewels of the Mississippi Gulf Coast — an artsy, walkable city with a vibrant downtown, a strong arts scene, and some of the most beautiful residential properties on the Gulf. The natural setting of Back Bay and the moss-draped oaks that line its streets make outdoor lighting here less about showing off and more about honoring what's already there.",
+      "We serve Ocean Springs and Jackson County with landscape lighting, holiday displays, event lighting, and permanent systems. The design sensibility here tends to be thoughtful and discerning — which is exactly how we like to work. Ocean Springs clients tend to ask the best questions and push us to do our most interesting work.",
+    ],
+    neighborhoods: [
+      "Downtown Ocean Springs",
+      "Back Bay area",
+      "Fort Bayou area",
+      "North Ocean Springs",
+      "Shearwater area",
+    ],
+    faq: [
+      {
+        q: "Do you serve Ocean Springs for landscape and event lighting?",
+        a: "Yes. Ocean Springs has one of the strongest event markets on the Gulf Coast — weddings, art events, private parties — and outdoor lighting is a meaningful part of those occasions. We design event setups as carefully as permanent installations.",
+      },
+      {
+        q: "How do you handle the live oak canopy in Ocean Springs?",
+        a: "The oaks in Ocean Springs are extraordinary. We design uplighting that plays with the canopy, creating dramatic shadow patterns and depth — it's one of the most satisfying effects in outdoor lighting and one of our favorite applications.",
+      },
+      {
+        q: "Is Jackson County within your regular service area?",
+        a: "Yes, though it's our easternmost Gulf Coast stop. We schedule Jackson County alongside our other Gulf Coast work. Allow a bit more lead time than our Louisiana locations, and reach out early for the holiday season.",
+      },
+    ],
+  },
 ];
 
 export function getLocation(slug: string): Location | undefined {

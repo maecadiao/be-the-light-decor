@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Star, ArrowRight } from "lucide-react";
 
@@ -29,11 +30,14 @@ export default function ServicePageExtras({ bgImage }: { bgImage: string }) {
         </div>
       </section>
 
-      {/* Service Areas — photo background with parallax, state groups + map */}
-      <section
-        className="relative py-20 bg-cover bg-center bg-scroll md:bg-fixed"
-        style={{ backgroundImage: `url('${bgImage}')` }}
-      >
+      {/* Service Areas — photo background */}
+      <section className="relative py-20 overflow-hidden">
+        <Image
+          src={bgImage}
+          alt="Be The Light Decor outdoor lighting service area across Southeast Louisiana"
+          fill
+          className="object-cover"
+        />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/72" />
 

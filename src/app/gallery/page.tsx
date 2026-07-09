@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
@@ -32,7 +33,8 @@ export default function GalleryPage() {
       <GalleryGrid />
 
       {/* CTA */}
-      <section className="relative py-28 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}>
+      <section className="relative py-28 overflow-hidden">
+        <Image src="/images/hero-bg.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/72" />
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-48 h-48 md:w-[500px] md:h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />

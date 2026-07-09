@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { MapPin, ArrowRight, Phone } from "lucide-react";
 import { locations } from "@/lib/locations";
@@ -79,7 +80,14 @@ export default function ServiceAreaPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
+      <section className="relative pt-32 pb-24 overflow-hidden">
+        <Image
+          src="/images/service-area-hero.jpg"
+          alt="Outdoor lighting installation across Southeast Louisiana — Be The Light Decor service area"
+          fill
+          className="object-cover"
+          priority
+        />
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-brand-gold text-xs font-semibold tracking-[0.3em] uppercase mb-4">
@@ -145,7 +153,8 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* Service areas map section */}
-      <section className="relative py-24 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
+      <section className="relative py-24 overflow-hidden">
+        <Image src="/images/service-area-hero.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-4xl sm:text-5xl font-bold text-white uppercase mb-8 tracking-wide">
@@ -179,7 +188,8 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-28 bg-cover bg-center bg-scroll md:bg-fixed" style={{ backgroundImage: "url('/images/service-area-hero.jpg')" }}>
+      <section className="relative py-28 overflow-hidden">
+        <Image src="/images/service-area-hero.jpg" alt="" fill className="object-cover" />
         <div className="absolute inset-0 bg-black/72" />
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-48 h-48 md:w-[500px] md:h-[500px] rounded-full opacity-20 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
         <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 rounded-full opacity-15 pointer-events-none" style={{ background: "radial-gradient(circle, #eeba0b 0%, transparent 65%)" }} />
