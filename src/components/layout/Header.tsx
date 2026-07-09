@@ -68,7 +68,7 @@ export default function Header() {
             <img
               src={scrolled ? "/images/logo-red.png" : "/images/logo-gold.png"}
               alt="Be The Light Decor"
-              className="h-14 lg:h-16 w-auto block transition-all duration-300"
+              className="h-20 lg:h-24 w-auto block transition-all duration-300"
             />
           </Link>
 
