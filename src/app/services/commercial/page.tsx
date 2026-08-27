@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Commercial Lighting",
   description:
     "Professional commercial outdoor lighting installations for businesses in Southeast Louisiana. Enhance your property's curb appeal, visibility, and atmosphere.",
+  alternates: { canonical: "/services/commercial" },
 };
 
 const commercialTypes = [

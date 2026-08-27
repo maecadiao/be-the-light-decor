@@ -5,9 +5,10 @@ import { CheckCircle2, ArrowRight, Phone } from "lucide-react";
 import ServicePageExtras from "@/components/sections/ServicePageExtras";
 
 export const metadata: Metadata = {
-  title: "Holiday Lighting",
+  title: "Christmas Lights Installer — Holiday Lighting in Southeast Louisiana",
   description:
-    "Professional holiday lighting installation, maintenance, and removal for homes and businesses in Southeast Louisiana. Christmas, Mardi Gras, Halloween, and patriotic displays.",
+    "Professional Christmas lights installer serving Southeast Louisiana. We hang, maintain, and take down holiday lighting for homes and businesses — no ladders, no hassle. Covington, Mandeville, New Orleans, and beyond.",
+  alternates: { canonical: "/services/holiday-lighting" },
 };
 
 const holidays = [

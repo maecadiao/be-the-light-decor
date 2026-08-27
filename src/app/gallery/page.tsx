@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Gallery",
   description:
     "Browse our portfolio of outdoor lighting installations — landscape lighting, holiday displays, events, and commercial projects across Southeast Louisiana.",
+  alternates: { canonical: "/gallery" },
 };
 
 export default function GalleryPage() {

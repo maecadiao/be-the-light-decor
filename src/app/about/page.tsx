@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "Be The Light Decor is a family-owned outdoor lighting company based in Covington, Louisiana. Learn our story, our values, and our Pink Lights for Hope initiative.",
+  alternates: { canonical: "/about" },
 };
 
 const values = [

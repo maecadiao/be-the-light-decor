@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Permanent Lighting",
   description:
     "Permanent programmable LED lighting installed once and controlled from your phone. Change colors and effects for every season, holiday, or event — no reinstalling needed.",
+  alternates: { canonical: "/services/permanent-lighting" },
 };
 
 const occasions = [

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Event Lighting",
   description:
     "Professional event and wedding lighting in Southeast Louisiana. We create stunning lighting setups for weddings, parties, corporate events, and special occasions.",
+  alternates: { canonical: "/services/event-lighting" },
 };
 
 const eventTypes = [

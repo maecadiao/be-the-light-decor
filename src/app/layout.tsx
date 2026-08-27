@@ -37,9 +37,6 @@ export const metadata: Metadata = {
     "Mandeville",
     "New Orleans",
   ],
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",

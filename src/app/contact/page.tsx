@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get a free outdoor lighting estimate from Be The Light Decor. Serving Covington, Mandeville, New Orleans, and all of Southeast Louisiana.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactInfo = [

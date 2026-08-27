@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Landscape Lighting",
   description:
     "Permanent outdoor landscape lighting installations for homes and businesses in Southeast Louisiana. Architectural lighting that enhances beauty, security, and curb appeal.",
+  alternates: { canonical: "/services/landscape-lighting" },
 };
 
 const lightingTypes = [

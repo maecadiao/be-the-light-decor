@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Service Area",
   description:
     "Be The Light Decor serves Southeast Louisiana and the Mississippi Gulf Coast. See if we cover your city — Covington, Mandeville, New Orleans, Baton Rouge, and more.",
+  alternates: { canonical: "/service-area" },
 };
 
 const primaryAreas = [
